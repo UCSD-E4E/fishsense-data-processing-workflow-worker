@@ -3,15 +3,15 @@ from typing import Iterator
 from sklearn.cluster import HDBSCAN
 from temporalio import activity
 
-from fishsense_data_processing_workflow_worker.models import Dive, Image
+from fishsense_data_processing_workflow_worker.models import Image
 
 
 @activity.defn
-async def group_dive_frames(images: Iterator[Image]):
-    """Group dive frames into clusters based on their timestamps.
+async def cluster_dive_frames(images: Iterator[Image]):
+    """Cluster dive frames into clusters based on their timestamps.
 
     Args:
-        images (Iterator[Image]): An iterator of Image objects to be grouped.
+        images (Iterator[Image]): An iterator of Image objects to be clustered.
 
     Returns:
         list[list[Image]]: A list of clusters, where each cluster is a list of Image objects.

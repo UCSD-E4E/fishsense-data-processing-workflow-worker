@@ -11,3 +11,5 @@ wheels/
 
 # Ignore dynaconf secret files
 .secrets.*
+
+scripts/

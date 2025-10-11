@@ -14,12 +14,12 @@ from temporalio.client import (
 )
 from temporalio.worker import Worker
 
-from fishsense_data_processing_workflow_worker.activities.group_dive_frames import (
-    group_dive_frames,
+from fishsense_data_processing_workflow_worker.activities.cluster_dive_frames import (
+    cluster_dive_frames,
 )
 from fishsense_data_processing_workflow_worker.config import configure_logging, settings
-from fishsense_data_processing_workflow_worker.workflows.dive_frame_grouping_workflow import (
-    DiveFrameGroupingWorkflow,
+from fishsense_data_processing_workflow_worker.workflows.dive_frame_clustering_workflow import (
+    DiveFrameClusteringWorkflow,
 )
 
 TASK_QUEUE_NAME = "fishsense_data_processing_queue"
@@ -62,9 +62,9 @@ async def main():
         worker = Worker(
             client,
             task_queue=TASK_QUEUE_NAME,
-            workflows=[DiveFrameGroupingWorkflow],
+            workflows=[DiveFrameClusteringWorkflow],
             activity_executor=executor,
-            activities=[group_dive_frames],
+            activities=[cluster_dive_frames],
         )
 
         worker_task = worker.run()
