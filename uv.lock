@@ -421,6 +421,7 @@ source = { editable = "." }
 dependencies = [
     { name = "dynaconf" },
     { name = "fishsense-api-sdk" },
+    { name = "label-studio-sdk" },
     { name = "numpy" },
     { name = "opencv-contrib-python" },
     { name = "opencv-python" },
@@ -456,6 +457,7 @@ hack = [
 requires-dist = [
     { name = "dynaconf", specifier = ">=3.2.11" },
     { name = "fishsense-api-sdk", git = "https://github.com/UCSD-E4E/fishsense-api-sdk.git" },
+    { name = "label-studio-sdk", specifier = ">=2.0.7" },
     { name = "numpy", specifier = ">=2.2.6" },
     { name = "opencv-contrib-python", specifier = ">=4.12.0.88" },
     { name = "opencv-python", specifier = ">=4.12.0.88" },

@@ -384,3 +384,4 @@ $RECYCLE.BIN/
 data/
 intrinsics/
 output/
+.label_studio_api_key
