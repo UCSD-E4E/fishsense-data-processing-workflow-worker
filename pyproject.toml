@@ -7,11 +7,17 @@ requires-python = ">=3.13"
 dependencies = [
     "dynaconf>=3.2.11",
     "fishsense-api-sdk",
+    "numpy>=2.2.6",
+    "opencv-contrib-python>=4.12.0.88",
+    "opencv-python>=4.12.0.88",
     "platformdirs>=4.3.8",
     "pydantic>=2.11.9",
+    "rawpy>=0.25.1",
+    "scikit-image>=0.25.2",
     "scikit-learn",
     "sqlmodel>=0.0.25",
     "temporalio>=1.17.0",
+    "tqdm>=4.67.1",
     "validators>=0.35.0",
 ]
 
@@ -86,6 +92,7 @@ build-backend = "uv_build"
 dev = [
     "ipykernel>=6.30.1",
     "ipywidgets>=8.1.7",
+    "matplotlib>=3.10.6",
     "pylint>=3.3.8",
 ]
 hack = [

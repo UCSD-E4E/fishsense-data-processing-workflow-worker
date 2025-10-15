@@ -421,11 +421,17 @@ source = { editable = "." }
 dependencies = [
     { name = "dynaconf" },
     { name = "fishsense-api-sdk" },
+    { name = "numpy" },
+    { name = "opencv-contrib-python" },
+    { name = "opencv-python" },
     { name = "platformdirs" },
     { name = "pydantic" },
+    { name = "rawpy" },
+    { name = "scikit-image" },
     { name = "scikit-learn" },
     { name = "sqlmodel" },
     { name = "temporalio" },
+    { name = "tqdm" },
     { name = "validators" },
 ]
 
@@ -433,6 +439,7 @@ dependencies = [
 dev = [
     { name = "ipykernel" },
     { name = "ipywidgets" },
+    { name = "matplotlib" },
     { name = "pylint" },
 ]
 hack = [
@@ -449,11 +456,17 @@ hack = [
 requires-dist = [
     { name = "dynaconf", specifier = ">=3.2.11" },
     { name = "fishsense-api-sdk", git = "https://github.com/UCSD-E4E/fishsense-api-sdk.git" },
+    { name = "numpy", specifier = ">=2.2.6" },
+    { name = "opencv-contrib-python", specifier = ">=4.12.0.88" },
+    { name = "opencv-python", specifier = ">=4.12.0.88" },
     { name = "platformdirs", specifier = ">=4.3.8" },
     { name = "pydantic", specifier = ">=2.11.9" },
+    { name = "rawpy", specifier = ">=0.25.1" },
+    { name = "scikit-image", specifier = ">=0.25.2" },
     { name = "scikit-learn" },
     { name = "sqlmodel", specifier = ">=0.0.25" },
     { name = "temporalio", specifier = ">=1.17.0" },
+    { name = "tqdm", specifier = ">=4.67.1" },
     { name = "validators", specifier = ">=0.35.0" },
 ]
 
@@ -461,6 +474,7 @@ requires-dist = [
 dev = [
     { name = "ipykernel", specifier = ">=6.30.1" },
     { name = "ipywidgets", specifier = ">=8.1.7" },
+    { name = "matplotlib", specifier = ">=3.10.6" },
     { name = "pylint", specifier = ">=3.3.8" },
 ]
 hack = [
