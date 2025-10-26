@@ -65,6 +65,8 @@ validators = [
     Validator("temporal.client_private_key", cast=str, condition=path_validator),
     Validator("temporal.domain", cast=str),
     Validator("temporal.server_root_ca_cert", cast=str, condition=path_validator),
+    Validator("e4e_nas.username", required=True, cast=str),
+    Validator("e4e_nas.password", required=True, cast=str)
 ]
 
 settings = Dynaconf(

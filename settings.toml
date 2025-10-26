@@ -9,3 +9,6 @@ client_cert = "/certs/client/fishsense-api-workflow-worker.pem"
 client_private_key = "/certs/client/fishsense-api-workflow-worker.key"
 domain = "workflows.fishsense.e4e.ucsd.edu"
 server_root_ca_cert = "/certs/ca/root-ca.pem"
+
+[e4e_nas]
+username = "fs_services"

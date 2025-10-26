@@ -17,6 +17,7 @@ dependencies = [
     "scikit-image>=0.25.2",
     "scikit-learn",
     "sqlmodel>=0.0.25",
+    "synology-api>=0.8.1",
     "temporalio>=1.17.0",
     "tqdm>=4.67.1",
     "validators>=0.35.0",
