@@ -275,3 +275,6 @@ $RECYCLE.BIN/
 # Ignore dynaconf secret files
 .secrets.*
 .secrets/
+.label_studio_api_key
+data/
+output/
