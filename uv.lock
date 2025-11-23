@@ -477,8 +477,8 @@ wheels = [
 
 [[package]]
 name = "fishsense-api-sdk"
-version = "1.11.0"
-source = { git = "https://github.com/UCSD-E4E/fishsense-api-sdk.git#9184d867316a77dadc0a5ccfe326615b2e077ad4" }
+version = "1.15.0"
+source = { git = "https://github.com/UCSD-E4E/fishsense-api-sdk.git#083ff2773d69108f098e9a3711b37f1e39916180" }
 dependencies = [
     { name = "httpx" },
     { name = "numpy" },

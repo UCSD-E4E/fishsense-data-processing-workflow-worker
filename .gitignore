@@ -278,3 +278,4 @@ $RECYCLE.BIN/
 .label_studio_api_key
 data/
 output/
+*.pkl
