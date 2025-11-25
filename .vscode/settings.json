@@ -18,4 +18,9 @@
         "black"
     ],
     "python.analysis.autoImportCompletions": false,
+    "python.analysis.exclude": [
+        "**/.venv/**",
+        "./data",
+        "./outputs"
+    ]
 }
