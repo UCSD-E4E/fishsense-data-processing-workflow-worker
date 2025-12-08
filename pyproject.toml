@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "dynaconf>=3.2.11",
     "fishsense-api-sdk",
+    "fishsense-core",
     "label-studio-sdk>=2.0.7",
     "numpy>=2.2.6",
     "opencv-contrib-python>=4.12.0.88",
@@ -87,6 +88,7 @@ upload_to_vcs_release = true
 
 [tool.uv.sources]
 fishsense-api-sdk = { git = "https://github.com/UCSD-E4E/fishsense-api-sdk.git" }
+fishsense-core = { git = "https://github.com/UCSD-E4E/fishsense-core.git" }
 
 [build-system]
 requires = ["uv_build>=0.8.12,<0.9.0"]
